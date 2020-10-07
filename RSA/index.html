@@ -98,6 +98,23 @@ button{
   background: #20C20E !important;
   color: black;
 }
+
+@media (max-width: 400px) {
+  .title-text{
+    font: normal 9vw 'Press Start 2P'
+  }
+.kg{
+  font: normal 7vw 'Press Start 2P'
+  }
+}
+
+@media (max-width: 500px){
+  .title-text{
+    font: normal 9vw 'Press Start 2P'
+  }
+}
+
+
 </style>
 
 <!-- End CSS -->
@@ -107,15 +124,15 @@ button{
   <div class="main">
     <div class="container">
       <div class="row">
-          <div class="col-lg-12 pt-4 text-center services-title">
+          <div class="col-lg-12 md-12 sm-12 pt-4 text-center services-title">
             <h1 class="text-uppercase title-text">RSA Calculator<span class="blinking-cursor">|</span></h1>
           </div>
-          <div class="col-lg-12 pt-2 text-center services-title">
+          <div class="col-lg-12 md-12 sm-12 pt-2 text-center services-title">
             <h3 class="text-uppercase title-text">17701094</h3>
           </div>
         </div>
-      <div class="jumbotron">
-        <div class="text-center pb-2"><h2 class="d-inline-flex p-2">Key Generation</h2></div>
+      <div class="jumbotron col-lg-12 md-12 sm-12">
+        <div class="text-center pb-2"><h2 class="d-inline-flex p-2 kg">Key Generation</h2></div>
         <h5 class="text-center">[INPUT TWO PRIME NUMBERS P & Q] </h5>
         <p class="text-center">Prime in between 17 and 100</p>
         <div class=" form-group row ">
@@ -127,7 +144,7 @@ button{
           </div>
           
           <div class="col">
-            <label for="Q" class="col-form-label px-2">Input Q:</label>
+            <label for="Q" class="col-form-label">Input Q:</label>
             <div>
               <input class="form-control mb-2"  type="number" step="1" id="q" name="q" min="10" max="100" >
             </div>
@@ -177,14 +194,14 @@ button{
           </div>
         </div>
         <hr>
-        <div class="text-center"><h2 class="d-inline-flex p-2">Encryption Test</h2></div>
+        <div class="text-center"><h2 class="d-inline-flex p-2 kg">Encryption Test</h2></div>
         <div class="row pt-2">
           <div class="col">
            <div>
             <label for="ins">Input(ASCII Lowercase):</label>
             <input class="form-control mb-2" id="ins" name="ins">
           </div>
-          <div class="text-center"><button class="btn btn-success pt-2" onclick="enc()">Encrypt</button>
+          <div class="text-center pt-2"><button class="btn btn-success pt-2" onclick="enc()">Encrypt</button>
           </div>
           </div>
           <div class="col">
@@ -195,14 +212,14 @@ button{
           </div>
         </div>
         <hr>
-        <div class="text-center"><h2 class="d-inline-flex p-2">Decryption Test</h2></div>
+        <div class="text-center"><h2 class="d-inline-flex p-2 kg">Decryption Test</h2></div>
         <div class="row pt-2">
         <div class="col">
            <div>
-            <label for="ind">Input(To Decrypt):</label>
+            <label for="ind">Input:</label>
             <input class="form-control mb-2" id="ind" name="ind">
           </div>
-          <div class="text-center"><button class="btn btn-success pt-2" onclick="dec()">Decrypt</button></div>
+          <div class="text-center pt-2"><button class="btn btn-success pt-2" onclick="dec()">Decrypt</button></div>
          </div> 
          <div class="col">
           <div>
